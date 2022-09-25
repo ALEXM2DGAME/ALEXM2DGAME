@@ -23,6 +23,7 @@ public class UIScript : MonoBehaviour
 	public GameObject statsPanel, gameOverPanel, winPanel;
 	public Transform inventory;
 	public GameObject resourceItemPrefab;
+	public GameObject player;
 
 
 	// Internal variables to keep track of score, health, and resources, win state

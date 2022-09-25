@@ -50,9 +50,10 @@ public class ObjectShooter : MonoBehaviour
             actualBulletDirection = (relativeToRotation) ? (Vector2)(Quaternion.Euler(0, 0, transform.eulerAngles.z) * shootDirection) : shootDirection;
             actualBulletDirection = (directionPlayerFacing) ? (Vector2)(Quaternion.Euler(0, transform.eulerAngles.y, 0) * shootDirection) : shootDirection;
 
+
             GameObject newObject = Instantiate<GameObject>(prefabToSpawn);
 			newObject.transform.position = this.transform.position;
-			newObject.transform.eulerAngles = new Vector3(0f, 0f, Utils.Angle(actualBulletDirection));
+			newObject.transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.y);
 			newObject.tag = "Bullet";
 
 			// push the created objects, but only if they have a Rigidbody2D
@@ -92,7 +93,9 @@ public class ObjectShooter : MonoBehaviour
 
         GameObject newObject = Instantiate<GameObject>(prefabToSpawn);
         newObject.transform.position = this.transform.position;
-        newObject.transform.eulerAngles = new Vector3(0f, 0f, Utils.Angle(actualBulletDirection));
+		Debug.Log(Quaternion.Euler(0, 0, transform.eulerAngles.z));
+		newObject.transform.rotation = Quaternion.Euler(0, 0, transform.eulerAngles.z);
+		Debug.Log(newObject.transform.rotation);
         newObject.tag = "Bullet";
 
         // push the created objects, but only if they have a Rigidbody2D

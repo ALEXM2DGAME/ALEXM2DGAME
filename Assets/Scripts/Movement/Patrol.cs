@@ -55,7 +55,8 @@ public class Patrol : Physics2DObject
 			if(orientToDirection)
 			{
 				currentTarget = newWaypoints[currentTargetIndex];
-				Utils.SetAxisTowards(lookAxis, transform, ((Vector3)currentTarget - transform.position).normalized);
+				// Utils.SetAxisTowards(lookAxis, transform, ((Vector3)currentTarget - transform.position).normalized);
+				gameObject.GetComponent<SpriteRenderer>().flipX = !gameObject.GetComponent<SpriteRenderer>().flipX;
 			}
 		}
 	}

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 [AddComponentMenu("Playground/Movement/Jump")]
