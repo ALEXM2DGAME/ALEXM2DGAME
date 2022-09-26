@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 118}
   - component: {fileID: 243}
   - component: {fileID: 130}
-  - component: {fileID: 289}
+  - component: {fileID: 47}
   m_Layer: 0
   m_Name: metal (5)
   m_TagString: Ground
@@ -885,6 +885,21 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Push the box
+--- !u!114 &47
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c7bb76e85354455909e3f696d0e13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody2D: {fileID: 0}
+  typeOfControl: 0
+  speed: 1
 --- !u!1 &51
 GameObject:
   m_ObjectHideFlags: 0
@@ -5169,20 +5184,6 @@ MonoBehaviour:
   lookAxis: 0
   waypoints:
   - {x: 20.143, y: 16.52}
---- !u!114 &289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c62d65bd264a4e088b75b7511b9467a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rigidbody2D: {fileID: 0}
-  rotationSpeed: 5
 --- !u!114 &290
 MonoBehaviour:
   m_ObjectHideFlags: 0
