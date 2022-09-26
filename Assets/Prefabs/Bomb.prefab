@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyWhenActivated: 0
-  healthChange: -1
+  healthChange: -3
 --- !u!50 &6095906892541348587
 Rigidbody2D:
   serializedVersion: 4
