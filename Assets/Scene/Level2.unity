@@ -815,7 +815,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   happenOnlyOnce: 0
-  filterByTag: 0
+  filterByTag: 1
   filterTag: Player
 --- !u!114 &45
 MonoBehaviour:
